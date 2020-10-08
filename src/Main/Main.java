@@ -20,7 +20,7 @@ public class Main {
         return false;
     }
 
-    public static int calculate(String op, int num1, int num2){
+    public static double calculate(String op, double num1, double num2){
 
         if(op.equals("addieren") || op.equals("+")){
             return (num1 + num2);
@@ -53,8 +53,8 @@ public class Main {
         System.out.println("Geben Sie 2 Werte ein, mit denen gerechnet werden soll.\n");
 
         try {
-            int num1 = sc.nextInt();
-            int num2 = sc.nextInt();
+            double num1 = sc.nextDouble();
+            double num2 = sc.nextDouble();
             System.out.println("Ergebnis: " + calculate(operator, num1, num2));
         }
         catch(Exception e) {
