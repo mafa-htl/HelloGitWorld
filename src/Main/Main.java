@@ -12,7 +12,7 @@ public class Main {
 
     public static boolean checkOp(String op){
 
-        if(op.equals("addieren") || op.equals("+") || op.equals("subtrahieren") || op.equals("-") || op.equals("multiplizieren") || op.equals("*") || op.equals("dividieren") || op.equals("/")) {
+        if(op.equals("addieren") || op.equals("+") || op.equals("subtrahieren") || op.equals("-") || op.equals("multiplizieren") || op.equals("*") || op.equals("dividieren") || op.equals("/") || op.equals("potenzieren") || op.equals("^")) {
             return true;
         }
 
@@ -34,6 +34,9 @@ public class Main {
         else if(op.equals("dividieren") || op.equals("/")){
             return (num1 / num2);
         }
+        else if(op.equals("potenzieren") || op.equals("^")){
+            return Math.pow(num1, num2);
+        }
 
         return 0;
     }
@@ -42,7 +45,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Wollen Sie 2 Zahlen: addieren (+), subtrahieren (-), multiplizieren (*) oder dividieren (/)?\n");
+        System.out.println("Wollen Sie 2 Zahlen: addieren (+), subtrahieren (-), multiplizieren (*), dividieren (/) oder potenzieren (^)?\n");
 
         String operator = sc.next();
 
